@@ -7,7 +7,7 @@
   <body>
 <header>
   <svg>
-    <image xlink:href="img/logo.svg" width="300px" height="130px"/>
+    <image xlink:href="../img/logo.svg" width="300px" height="130px"/>
   </svg>
   <h1>Hoja de Vida</h1>
 </header>
@@ -22,18 +22,86 @@
 </article>
     <nav>
 <h2>Enlaces de Menú</h2>
-<p><a href="educacion.html">Educacion</a>  |  <a href="experiencia.html">Experiencia</a>
+<p><a href="../experiencia/experiencia.html">Experiencia</a>  |  <a href="../index.html">Inicio</a>
   </p>
     </nav>
-<h2>Información Personal</h2>
+<h2>Educación</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Año</th>
+        <th>Institución</th>
+        <th>Lugar</th>
+        <th>¿Culmino?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1989</td>
+        <td>Hispano Boliviano</td>
+        <td>Cochabamba</td>
+        <td>Si</td>
+      </tr>
+      <tr>
+        <td>1998</td>
+        <td>Instituto de Educación Bancaria</td>
+        <td>Cochabamba</td>
+        <td>Si</td>
+      </tr>
+      <tr>
+        <td>2002</td>
+        <td>ESCA-Diseño Gráfico</td>
+        <td>Cochabamba</td>
+        <td>Si</td>
+      </tr>
+      <tr>
+        <td>2017</td>
+        <td>NextU - Desarrollador Web</td>
+        <td>EE.UU. - Online</td>
+        <td>No</td>
+      </tr>
+    </tbody>
+  </table>
+  <article>
+    <h2>Agregar Estudios</h2>
+    <form autocomplete="on" name="Nuevos estudios">
+      <p>
+        <label for="año"><strong>Año: </strong></label>
+        <select name="año">
+          <option value="1">2010</option>
+          <option value="1">2011</option>
+          <option value="1">2012</option>
+          <option value="1">2013</option>
+          <option value="1">2014</option>
+          <option value="1">2015</option>
+          <option value="1">2016</option>
+          <option value="1">2017</option>
+        </select>
+      </p>
+      <p>
+        <label for="Instituto"><strong>Institución: </strong></label>
+        <input type="text" placeholder="Nombre de la institucion" required>
+      </p>
+      <p>
+        <label for="lugar"><strong>Lugar: </strong></label>
+        <textarea name="Lugar" rows="3" cols="35" required></textarea>
+      </p>
+      <p>
+        <label for="Termino"><strong>¿Culminó?  </strong></label>
+        <input type="radio" name="Termino"> Si
+  			<input type="radio" name="Termino"> No
+      </p>
+      <input type="submit" name="Enviar">
+    </form>
 
+  </article>
 <footer>
   <h2>Información de Contacto</h2>
   <ul>
     <p><li><strong>Teléfono:</strong> (+591) 4 - 727 42020</li></p>
     <p><li><strong>Direccion:</strong> Av. 9 de Abril #1349 Cochabamba-Bolivia</li></p>
-    <p><li><strong>Correo y facebook:</strong> <a href="mailto:dgdser@gmail.com?subject=feedback"><img src="img/mail.svg" alt="Correo" title="Enviame un correo" width="24px"></a>  •  <a href="https://www.facebook.com/pmalkav" target="_blank"> <img src="img/facebook.svg" alt="Facebook" title="Escribe en mi muro" width="24px"></a></li></p>
-    <p><li><strong>Portafolio en Línea:</strong> <a href="http://hassaku.deviantart.com/gallery/" target="_blank"><img src="img/deviant.svg" alt="Portafolio" title="Visita mis trabajos" width="24px"></a></li></p>
+    <p><li><strong>Correo y facebook:</strong> <a href="mailto:dgdser@gmail.com?subject=feedback"><img src="../img/mail.svg" alt="Correo" title="Enviame un correo" width="24px"></a>  •  <a href="https://www.facebook.com/pmalkav" target="_blank"> <img src="../img/facebook.svg" alt="Facebook" title="Escribe en mi muro" width="24px"></a></li></p>
+    <p><li><strong>Portafolio en Línea:</strong> <a href="http://hassaku.deviantart.com/gallery/" target="_blank"><img src="../img/deviant.svg" alt="Portafolio" title="Visita mis trabajos" width="24px"></a></li></p>
   </ul>
 </footer>
   </body>
